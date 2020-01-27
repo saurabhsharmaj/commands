@@ -1,0 +1,1 @@
+docker run -d --restart=always -p 5601:5601 -p 9200:9200 -p 5044:5044 -v /opt/software/elk-config/elastic/data:/var/lib/elasticsearch -v /opt/software/elk-config/logstash:/etc/logstash/conf.d -it --name elk sebp/elk  
